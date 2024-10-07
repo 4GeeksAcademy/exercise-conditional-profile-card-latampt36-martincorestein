@@ -38,9 +38,6 @@ function render(variables = {}) {
   let instagram = `${variables.instagram}`;
 
   let role = variables.role ? `<h2>${variables.role}</h2>` : "Select Your Role";
-  // let location = `${variables.city || ""}${
-  //   variables.city && variables.country ? ", " : ""
-  // }${variables.country || ""}`.trim();
   let location =
     variables.city || variables.country
       ? `${variables.city || ""}${
